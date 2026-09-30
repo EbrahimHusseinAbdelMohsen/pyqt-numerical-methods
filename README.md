@@ -99,8 +99,8 @@ Numerical Methods Project brings common numerical analysis algorithms into a cle
 1. Clone the repository (or download and extract the ZIP):
 
    ```bash
-   git clone https://github.com/<your-username>/Numerical-Methods-Project.git
-   cd Numerical-Methods-Project
+   git clone https://github.com/<your-username>/pyqt-numerical-methods.git
+   cd pyqt-numerical-methods
    ```
 
 2. Install the dependency:
@@ -112,12 +112,13 @@ Numerical Methods Project brings common numerical analysis algorithms into a cle
 3. Launch the application:
 
    ```bash
+   cd "Source files"
    python main.py
    ```
 
 ## Usage
 
-1. Start the app with `python main.py`.
+1. Start the app by running `python main.py` from the `Source files` folder.
 2. Pick a method from the main menu.
 3. Enter the function (or system coefficients), initial guesses or bounds, stopping condition, and precision.
 4. Click **Calculate** to view the iteration table and the final root and error.
@@ -127,7 +128,7 @@ Numerical Methods Project brings common numerical analysis algorithms into a cle
 ## Project Structure
 
 ```text
-Numerical Project/
+pyqt-numerical-methods/
 ├── README.md                   # Project documentation
 ├── docs/                       # Logo and screenshots used in this README
 │   ├── Logo.png
@@ -136,37 +137,38 @@ Numerical Project/
 │   ├── simple_fixed_point.png
 │   └── cramers_rule.png
 │
-├── main.py                     # Application entry point
-├── Numerical Project.ui        # Qt Designer UI layout
-├── validation.py               # Input validation and shared UI helpers
-├── Black_Theme.qss             # Black theme stylesheet
-├── Gray_Theme.qss              # Gray theme stylesheet
-│
-├── bisection.py                # Bisection algorithm
-├── bisection_handler.py        # Bisection UI handler
-├── false_position.py           # False Position algorithm
-├── false_position_handler.py   # False Position UI handler
-├── fixed_point.py              # Fixed-Point algorithm
-├── fixed_point_handler.py      # Fixed-Point UI handler
-├── newton.py                   # Newton-Raphson algorithm
-├── newton_handler.py           # Newton-Raphson UI handler
-├── secant.py                   # Secant algorithm
-├── secant_handler.py           # Secant UI handler
-│
-├── gaussin.py                  # Gaussian Elimination algorithm
-├── gaussin_handler.py          # Gaussian Elimination UI handler
-├── lu_decomposition.py         # LU Decomposition algorithm
-├── lu_handler.py               # LU Decomposition UI handler
-├── cramers.py                  # Cramer's Rule algorithm
-├── cramers_handler.py          # Cramer's Rule UI handler
-├── gauss_jordan.py             # Gauss-Jordan algorithm
-├── gauss_jordan_handler.py     # Gauss-Jordan UI handler
-│
-├── Logo.png                    # Application logo
-├── Favicon.png                 # Window icon
-├── arrow.png                   # Back arrow icon
-├── settings.png                # Settings icon
-└── up.png / down.png           # Spinbox arrows
+└── Source files/
+    ├── main.py                     # Application entry point
+    ├── Numerical Project.ui        # Qt Designer UI layout
+    ├── validation.py               # Input validation and shared UI helpers
+    ├── Black_Theme.qss             # Black theme stylesheet
+    ├── Gray_Theme.qss              # Gray theme stylesheet
+    │
+    ├── bisection.py                # Bisection algorithm
+    ├── bisection_handler.py        # Bisection UI handler
+    ├── false_position.py           # False Position algorithm
+    ├── false_position_handler.py   # False Position UI handler
+    ├── fixed_point.py              # Fixed-Point algorithm
+    ├── fixed_point_handler.py      # Fixed-Point UI handler
+    ├── newton.py                   # Newton-Raphson algorithm
+    ├── newton_handler.py           # Newton-Raphson UI handler
+    ├── secant.py                   # Secant algorithm
+    ├── secant_handler.py           # Secant UI handler
+    │
+    ├── gaussin.py                  # Gaussian Elimination algorithm
+    ├── gaussin_handler.py          # Gaussian Elimination UI handler
+    ├── lu_decomposition.py         # LU Decomposition algorithm
+    ├── lu_handler.py               # LU Decomposition UI handler
+    ├── cramers.py                  # Cramer's Rule algorithm
+    ├── cramers_handler.py          # Cramer's Rule UI handler
+    ├── gauss_jordan.py             # Gauss-Jordan algorithm
+    ├── gauss_jordan_handler.py     # Gauss-Jordan UI handler
+    │
+    ├── Logo.png                    # Application logo
+    ├── Favicon.png                 # Window icon
+    ├── arrow.png                   # Back arrow icon
+    ├── settings.png                # Settings icon
+    └── up.png / down.png           # Spinbox arrows
 ```
 
 ## Architecture
