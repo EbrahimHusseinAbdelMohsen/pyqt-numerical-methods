@@ -1,0 +1,3358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>856</width>
+    <height>476</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-30</y>
+     <width>871</width>
+     <height>641</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="main_tab">
+    <attribute name="title">
+     <string>main</string>
+    </attribute>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>20</y>
+       <width>181</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>Logo.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QWidget" name="gridLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>220</y>
+       <width>521</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="1" column="2">
+       <widget class="QPushButton" name="gaussin_elimination_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>56</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Gaussin Elimination</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="falseposition_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>56</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>False Position</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="simple_fixed_point_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>56</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Simple Fixed Point</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="secant_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>56</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Secant</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="bisection_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>56</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Bisection</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="newton_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>56</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Newton</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="lu_decomposition_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>56</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>LU Decomposition</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="cramersrule_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>56</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>CramersRule</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="gauss_jordan_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>56</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Gauss Jordan Method</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="settings_btn">
+     <property name="geometry">
+      <rect>
+       <x>740</x>
+       <y>30</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>settings.png</normaloff>settings.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>55</width>
+       <height>74</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="settings_tab">
+    <attribute name="title">
+     <string>settings</string>
+    </attribute>
+    <widget class="QSpinBox" name="round_spinbox">
+     <property name="geometry">
+      <rect>
+       <x>412</x>
+       <y>95</y>
+       <width>72</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777203</height>
+      </size>
+     </property>
+     <property name="minimum">
+      <number>3</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Round">
+     <property name="geometry">
+      <rect>
+       <x>351</x>
+       <y>90</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Round</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Settings">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>60</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Settings</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="About_The_Project">
+     <property name="geometry">
+      <rect>
+       <x>302</x>
+       <y>185</y>
+       <width>241</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>About The Project</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ibrahim_hussein_label">
+     <property name="geometry">
+      <rect>
+       <x>551</x>
+       <y>270</y>
+       <width>211</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>○ Ibrahim Hussein Abdel mohsen Ali</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Creators">
+     <property name="geometry">
+      <rect>
+       <x>531</x>
+       <y>240</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Technologies">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>240</y>
+       <width>157</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Technologies</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="back_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>52</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>arrow.png</normaloff>arrow.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Themes">
+     <property name="geometry">
+      <rect>
+       <x>297</x>
+       <y>135</y>
+       <width>49</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Themes</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="gray_theme_radio_btn">
+     <property name="geometry">
+      <rect>
+       <x>354</x>
+       <y>135</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Gray Theme</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="black_theme_radio_btn">
+     <property name="geometry">
+      <rect>
+       <x>455</x>
+       <y>135</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Black Theme</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="pyqt">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>270</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>○ Pyqt &amp; Qt Designer</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Python">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>290</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>○ Python</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Qss">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>310</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+    </widget>
+    <zorder>Round</zorder>
+    <zorder>Settings</zorder>
+    <zorder>About_The_Project</zorder>
+    <zorder>ibrahim_hussein_label</zorder>
+    <zorder>Creators</zorder>
+    <zorder>Technologies</zorder>
+    <zorder>round_spinbox</zorder>
+    <zorder>back_2</zorder>
+    <zorder>Themes</zorder>
+    <zorder>gray_theme_radio_btn</zorder>
+    <zorder>black_theme_radio_btn</zorder>
+    <zorder>pyqt</zorder>
+    <zorder>Python</zorder>
+    <zorder>Qss</zorder>
+   </widget>
+   <widget class="QWidget" name="bisection_tab">
+    <attribute name="title">
+     <string>Bisection</string>
+    </attribute>
+    <widget class="QPushButton" name="back">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>52</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>arrow.png</normaloff>arrow.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="fx_input_bisection">
+     <property name="geometry">
+      <rect>
+       <x>59</x>
+       <y>102</y>
+       <width>301</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Mathematical Function</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Variables_text_bisection">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Variables</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="fx_text_bisection">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>106</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>F(x)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Xl_text_bisection">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>135</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Xl</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="xl_input_bisection">
+     <property name="geometry">
+      <rect>
+       <x>59</x>
+       <y>132</y>
+       <width>131</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>X Lower</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Xu_text_bisection">
+     <property name="geometry">
+      <rect>
+       <x>207</x>
+       <y>135</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Xu</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="xu_input_bisection">
+     <property name="geometry">
+      <rect>
+       <x>229</x>
+       <y>132</y>
+       <width>131</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>X Upper</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Condition_text_bisection">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>180</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Condition</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="es_radio_btn">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>220</y>
+       <width>21</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="maxi_radio_btn">
+     <property name="geometry">
+      <rect>
+       <x>197</x>
+       <y>220</y>
+       <width>21</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="es_input_bisection">
+     <property name="geometry">
+      <rect>
+       <x>86</x>
+       <y>218</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Error Sum %</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ES_text_bisection">
+     <property name="geometry">
+      <rect>
+       <x>61</x>
+       <y>221</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ES</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="MAXi_text_bisection">
+     <property name="geometry">
+      <rect>
+       <x>225</x>
+       <y>221</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MAXi</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="maxi_input_bisection">
+     <property name="geometry">
+      <rect>
+       <x>269</x>
+       <y>218</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Max Iteration</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Results_text_bisection">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>331</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Results</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="table_bisection">
+     <property name="geometry">
+      <rect>
+       <x>379</x>
+       <y>102</y>
+       <width>461</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+    </widget>
+    <widget class="QLabel" name="Table_text_bisection">
+     <property name="geometry">
+      <rect>
+       <x>589</x>
+       <y>70</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Table</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="root_result_bisection">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>363</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Root</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Root_text_bisection">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>363</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Root</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Ea_text_bisection">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>399</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ea</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="error_result_bisection">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>399</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Error</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bisection_calc_btn">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>270</y>
+       <width>321</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Calculate</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="falseposition_tab">
+    <attribute name="title">
+     <string>false</string>
+    </attribute>
+    <widget class="QPushButton" name="back_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>52</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>arrow.png</normaloff>arrow.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Table_text_false_position">
+     <property name="geometry">
+      <rect>
+       <x>589</x>
+       <y>70</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Table</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="maxi_input_false_position">
+     <property name="geometry">
+      <rect>
+       <x>269</x>
+       <y>218</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Max Iteration</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Variables_text_false_position">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Variables</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="false_position_calc_btn">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>270</y>
+       <width>321</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Calculate</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="es_radio_btn_false_position">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>220</y>
+       <width>21</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="xl_input_false_position">
+     <property name="geometry">
+      <rect>
+       <x>59</x>
+       <y>132</y>
+       <width>131</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>X Lower</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="es_input_false_position">
+     <property name="geometry">
+      <rect>
+       <x>86</x>
+       <y>218</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Error Sum %</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="root_result_false_position">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>363</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Root</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="error_result_false_position">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>399</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Error</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="maxi_radio_btn_false_position">
+     <property name="geometry">
+      <rect>
+       <x>197</x>
+       <y>220</y>
+       <width>21</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Ea_text_false_position">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>399</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ea</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="table_false_position">
+     <property name="geometry">
+      <rect>
+       <x>379</x>
+       <y>102</y>
+       <width>461</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+    </widget>
+    <widget class="QLineEdit" name="fx_input_false_position">
+     <property name="geometry">
+      <rect>
+       <x>59</x>
+       <y>102</y>
+       <width>301</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Mathematical Function</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Xu_text_false_position">
+     <property name="geometry">
+      <rect>
+       <x>207</x>
+       <y>135</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Xu</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="xu_input_false_position">
+     <property name="geometry">
+      <rect>
+       <x>229</x>
+       <y>132</y>
+       <width>131</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>X Upper</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="fx_text_false_position">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>106</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>F(x)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Condition_text_false_position">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>180</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Condition</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ES_text_false_position">
+     <property name="geometry">
+      <rect>
+       <x>61</x>
+       <y>221</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ES</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Results_text_false_position">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>331</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Results</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Root_text_false_position">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>363</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Root</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Xl_text_false_position">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>135</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Xl</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="MAXi_text_false_position">
+     <property name="geometry">
+      <rect>
+       <x>225</x>
+       <y>221</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MAXi</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="simple_fixed_point_tab">
+    <attribute name="title">
+     <string>fixed</string>
+    </attribute>
+    <widget class="QPushButton" name="back_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>52</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>arrow.png</normaloff>arrow.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Variables_text_simple_fixed_point">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Variables</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="gx_input_simple_fixed_point">
+     <property name="geometry">
+      <rect>
+       <x>59</x>
+       <y>102</y>
+       <width>301</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Simple Fixed Point</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="gx_text_simple_fixed_point">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>106</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>g(x)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="X0_text_simple_fixed_point">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>136</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X0</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="x0_input_simple_fixed_point">
+     <property name="geometry">
+      <rect>
+       <x>59</x>
+       <y>133</y>
+       <width>301</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>eXtreme node</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Condition_text_simple_fixed_point">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>180</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Condition</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="maxi_input_simple_fixed_point">
+     <property name="geometry">
+      <rect>
+       <x>269</x>
+       <y>218</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Max Iteration</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="MAXi_text_simple_fixed_point">
+     <property name="geometry">
+      <rect>
+       <x>225</x>
+       <y>221</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MAXi</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="maxi_radio_btn_simple_fixed_point">
+     <property name="geometry">
+      <rect>
+       <x>197</x>
+       <y>220</y>
+       <width>21</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="es_input_simple_fixed_point">
+     <property name="geometry">
+      <rect>
+       <x>86</x>
+       <y>218</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Error Sum %</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ES_text_simple_fixed_point">
+     <property name="geometry">
+      <rect>
+       <x>61</x>
+       <y>221</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ES</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="es_radio_btn_simple_fixed_point">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>220</y>
+       <width>21</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="fixed_point_calc_btn">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>270</y>
+       <width>321</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Calculate</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Root_simple_fixed_point">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>363</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Root</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="table_simple_fixed_point">
+     <property name="geometry">
+      <rect>
+       <x>379</x>
+       <y>102</y>
+       <width>461</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+    </widget>
+    <widget class="QLabel" name="Results_simple_fixed_point">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>331</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Results</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="error_result_simple_fixed_point">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>399</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Error</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="root_result_simple_fixed_point">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>363</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Root</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Ea_text_simple_fixed_point">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>399</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ea</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Table_text_simple_fixed_point">
+     <property name="geometry">
+      <rect>
+       <x>589</x>
+       <y>70</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Table</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Newton_tab">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <attribute name="title">
+     <string>newton</string>
+    </attribute>
+    <widget class="QPushButton" name="back_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>52</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>arrow.png</normaloff>arrow.png</iconset>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="table_newton">
+     <property name="geometry">
+      <rect>
+       <x>379</x>
+       <y>87</y>
+       <width>461</width>
+       <height>341</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+    </widget>
+    <widget class="QLineEdit" name="dfx_input_newton">
+     <property name="geometry">
+      <rect>
+       <x>59</x>
+       <y>116</y>
+       <width>301</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>derivative</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="root_result_newton">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>363</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Root</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="dfx_text_newton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>116</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>df(x)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ES_text_newton">
+     <property name="geometry">
+      <rect>
+       <x>61</x>
+       <y>229</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ES</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="maxi_input_input_newton">
+     <property name="geometry">
+      <rect>
+       <x>269</x>
+       <y>226</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Max Iteration</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Variables_text_newton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>56</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Variables</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="root_text_newton">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>363</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Root</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="MAXi_text_newton">
+     <property name="geometry">
+      <rect>
+       <x>225</x>
+       <y>229</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MAXi</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="error_result_newton">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>399</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Error</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Ea_text_newton">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>399</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ea</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="newton_calc_btn">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>275</y>
+       <width>321</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Calculate</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="results_text_newton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>331</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Results</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="X0_text_newton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>151</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X0</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="es_input_newton">
+     <property name="geometry">
+      <rect>
+       <x>86</x>
+       <y>226</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Error Sum %</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="table_text_newton">
+     <property name="geometry">
+      <rect>
+       <x>589</x>
+       <y>56</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Table</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="es_radio_btn_newton">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>228</y>
+       <width>21</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="x0_input_newton">
+     <property name="geometry">
+      <rect>
+       <x>59</x>
+       <y>148</y>
+       <width>301</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>eXtreme node</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="maxi_radio_btn_newton">
+     <property name="geometry">
+      <rect>
+       <x>197</x>
+       <y>227</y>
+       <width>21</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="condition_text_newton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>190</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Condition</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="fx_text_newton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>89</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>f(x)</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="fx_input_newton">
+     <property name="geometry">
+      <rect>
+       <x>59</x>
+       <y>87</y>
+       <width>301</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Mathematical Function</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Secant_tab">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <attribute name="title">
+     <string>secant</string>
+    </attribute>
+    <widget class="QPushButton" name="back_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>52</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>arrow.png</normaloff>arrow.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLabel" name="table_text_secccant">
+     <property name="geometry">
+      <rect>
+       <x>589</x>
+       <y>70</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Table</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="table_secant">
+     <property name="geometry">
+      <rect>
+       <x>379</x>
+       <y>102</y>
+       <width>461</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+    </widget>
+    <widget class="QLineEdit" name="maxi_input_secant">
+     <property name="geometry">
+      <rect>
+       <x>269</x>
+       <y>218</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Max Iteration</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="es_radio_btn_secant">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>220</y>
+       <width>21</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Ea_text_secant">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>399</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ea</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="x0_input_secant">
+     <property name="geometry">
+      <rect>
+       <x>229</x>
+       <y>132</y>
+       <width>131</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>X0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="variables_text_secant">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Variables</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Condition_text_secant">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>180</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Condition</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="maxi_radio_btn_secant">
+     <property name="geometry">
+      <rect>
+       <x>197</x>
+       <y>220</y>
+       <width>21</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="secant_calc_btn">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>270</y>
+       <width>321</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Calculate</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="MAXi_text_secant">
+     <property name="geometry">
+      <rect>
+       <x>225</x>
+       <y>221</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MAXi</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="es_input_secant">
+     <property name="geometry">
+      <rect>
+       <x>86</x>
+       <y>218</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Error Sum %</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ES_text_secant">
+     <property name="geometry">
+      <rect>
+       <x>61</x>
+       <y>221</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ES</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="xi_minus_input_secant">
+     <property name="geometry">
+      <rect>
+       <x>59</x>
+       <y>132</y>
+       <width>131</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>X-1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="fx_text_secant">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>106</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>F(x)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Xminus1_text_secant">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>135</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X-1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Results_text_secant">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>331</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Results</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="error_result_secant">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>399</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Error</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="X0_text_secant">
+     <property name="geometry">
+      <rect>
+       <x>207</x>
+       <y>135</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Root_text_secant">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>363</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Root</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="fx_input_secant">
+     <property name="geometry">
+      <rect>
+       <x>59</x>
+       <y>102</y>
+       <width>301</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Mathematical Function</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="root_result_secant">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>363</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Root</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="gaussin_elimination_tab">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <attribute name="title">
+     <string>guassin</string>
+    </attribute>
+    <widget class="QPushButton" name="back_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>52</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>arrow.png</normaloff>arrow.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Variables_text_gaussin">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Variables</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a11_gaussin">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>100</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Table_text_gaussin">
+     <property name="geometry">
+      <rect>
+       <x>589</x>
+       <y>70</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Table</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="table_guassin">
+     <property name="geometry">
+      <rect>
+       <x>379</x>
+       <y>102</y>
+       <width>461</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+    </widget>
+    <widget class="QLineEdit" name="a12_gaussin">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>100</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a13_gaussin">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>100</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a21_gaussin">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>140</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a22_gaussin">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>140</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a23_gaussin">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>140</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a31_gaussin">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>182</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a33_gaussin">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>182</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a32_gaussin">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>182</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="X1_result_gaussin">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>320</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>X1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="X2_text_gaussin">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>355</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="X1_text_gaussin">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>320</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X1</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="X2_result_gaussin">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>354</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>X2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Results_text_gaussin">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>285</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Results</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sol_gaussin">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>100</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sol_gaussin_2">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>140</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sol_gaussin_3">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>180</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="gaussin_calc_btn">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>228</y>
+       <width>321</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Calculate</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="X3_text_gaussin">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>392</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X3</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="X3_result_gaussin">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>390</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>X3</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="lu_decomposition_tab">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <attribute name="title">
+     <string>lu</string>
+    </attribute>
+    <widget class="QPushButton" name="back_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>52</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>arrow.png</normaloff>arrow.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sol_lu_decomposition_3">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>180</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a12_lu_decomposition">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>100</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Variables_text_lu_decomposition">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Variables</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a31_lu_decomposition">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>182</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a33_lu_decomposition">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>182</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="X3_result_lu_decomposition">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>390</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>X3</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a21_lu_decomposition">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>140</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="X3_text_lu_decomposition">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>392</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X3</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="lu_decomposition_calc_btn">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>228</y>
+       <width>321</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Calculate</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="X1_result_lu_decomposition">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>320</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>X1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Results_text_lu_decomposition">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>285</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Results</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a22_lu_decomposition">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>140</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sol_lu_decomposition_2">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>140</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sol_lu_decomposition">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>100</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="table_lu_decomposition">
+     <property name="geometry">
+      <rect>
+       <x>379</x>
+       <y>102</y>
+       <width>461</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+    </widget>
+    <widget class="QLabel" name="X1_text_lu_decomposition">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>320</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X1</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a13_lu_decomposition">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>100</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a11_lu_decomposition">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>100</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="X2_result_lu_decomposition">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>354</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>X2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Table_text_lu_decomposition">
+     <property name="geometry">
+      <rect>
+       <x>589</x>
+       <y>70</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Table</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a23_lu_decomposition">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>140</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="X2_text_lu_decomposition">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>355</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X2</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a32_lu_decomposition">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>182</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="cramers_rule_tab">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <attribute name="title">
+     <string>cramers</string>
+    </attribute>
+    <widget class="QPushButton" name="back_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>52</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>arrow.png</normaloff>arrow.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLabel" name="X3_text_cramers">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>392</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Table_text_cramers">
+     <property name="geometry">
+      <rect>
+       <x>589</x>
+       <y>70</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Table</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a13_cramers">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>100</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="X2_text_cramers">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>355</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X2</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a22_cramers">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>140</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="table_cramers">
+     <property name="geometry">
+      <rect>
+       <x>379</x>
+       <y>102</y>
+       <width>461</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+    </widget>
+    <widget class="QLineEdit" name="a11_cramers">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>100</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a21_cramers">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>140</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="X3_result_cramers">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>390</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>X3</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sol_cramers_2">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>140</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sol_cramers_3">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>180</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a32_cramers">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>182</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sol_cramers">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>100</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="X2_result_cramers">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>354</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>X2</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="X1_result_cramers">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>320</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>X1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="X1_text_cramers">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>320</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Results_text_cramers">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>285</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Results</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a31_cramers">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>182</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Variables_text_cramers">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Variables</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a23_cramers">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>140</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="cramers_calc_btn">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>228</y>
+       <width>321</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Calculate</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a12_cramers">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>100</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a33_cramers">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>182</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="guass_jordan_tab">
+    <attribute name="title">
+     <string>guass</string>
+    </attribute>
+    <widget class="QPushButton" name="back_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>52</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>arrow.png</normaloff>arrow.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sol_gauss_jordan_3">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>180</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="X3_text_gauss_jordan">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>392</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X3</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="X3_result_gauss_jordan">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>390</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>X3</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="table_gauss_jordan">
+     <property name="geometry">
+      <rect>
+       <x>379</x>
+       <y>102</y>
+       <width>461</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+    </widget>
+    <widget class="QLineEdit" name="a32_gauss_jordan">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>182</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="X2_result_gauss_jordan">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>354</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>X2</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a22_gauss_jordan">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>140</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a13_gauss_jordan">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>100</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="X1_text_gauss_jordan">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>320</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X1</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a33_gauss_jordan">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>182</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sol_gauss_jordan_2">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>140</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="X2_text_gauss_jordan">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>355</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X2</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a21_gauss_jordan">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>140</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="gauss_jordan_calc_btn">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>228</y>
+       <width>321</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Calculate</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Table_text_gauss_jordan">
+     <property name="geometry">
+      <rect>
+       <x>589</x>
+       <y>70</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Table</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a11_gauss_jordan">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>100</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a23_gauss_jordan">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>140</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a12_gauss_jordan">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>100</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Results_text_gauss_jordan">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>285</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Results</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="a31_gauss_jordan">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>182</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Variables_text_gauss_jordan">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Variables</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="X1_result_gauss_jordan">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>320</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>X1</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sol_gauss_jordan">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>100</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
